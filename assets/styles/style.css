@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 1em 0;
+}
+
+p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0px auto;
+    overflow: hidden;
+} 
+
+.content{
+    flex: 1 1 auto;
+} 
+
+.btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 1em 2em;
+    border: 1px solid #666;
+    margin: 0.5em 0;
+  }
+
+.btn:hover {
+    background: #eaeaea;
+    color: #333;
+}
+
+/* welcome */
+
+.welcome{
+    width: 100%;
+    min-height: 450px;
+    color: #fff;
+    text-align: center;
+}
+
+.welcome-img{
+    position: absolute;
+    background: #333;
+    background-image: url(../imges/fon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.welcome-container{
+    position: relative;
+    padding: 0 1.5em;
+    z-index: 2             
+}
+
+.welcome-container h1{
+    padding-top:100px;
+    padding-bottom: 0;
+}
+
+.wraper-welcome{
+    display: flex;
+    flex-flow: column wrap;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.info-text{
+    display: flex;
+    flex-flow: row wrap; 
+}
+
+.info-text-welcome{
+    align-content: center;
+    flex: 1 1 25em;
+}
+
+
+/*info*/
+
+.wrapper-light{
+    display: flex;
+    flex-flow: column wrap;
+    color: #333;
+    padding-bottom: 0;
+    margin-bottom: 0;  
+}
+
+.info-upper{
+    display: flex;
+    flex-flow: row wrap;    
+    background: #eaeaea;
+    padding-bottom: 1em; 
+}
+ 
+ .info-text-upper{
+  align-content: center;
+  flex: 1 1 20em;
+  padding: 0 1em;  
+}
+
+.info-text-upper p{  
+  columns: 2;
+  column-gap: 2em;
+  padding-top: 0;
+  padding-bottom: 2em;  
+  text-align: justify;
+}
+
+.info-right, .info-left {
+    flex-basis: 28%;
+    padding: 0%;
+    margin: 0%;
+}
+
+.info-right {
+    order: -1;
+}
+
+/*card*/
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0.5em 1em;
+}
+
+.card-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card-item{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    width: 280px;
+    margin: 0px 10px 1em;
+    background: #fff;
+    color: #333;
+    overflow: hidden;
+}
+
+.card-upper{
+    overflow: hidden; 
+    object-fit: cover;      
+}
+
+.card-lower{
+    padding: 1.5em;
+}
+
+/*info-lower*/
+
+.info-lower{
+    display: flex;
+    flex-flow: row wrap;  
+    background: #fff;
+    color: #333;
+    padding: 2em 0;
+}
+
+.info-text-lower{
+    align-content: center;
+    flex: 1 1 20em;
+}
+
+/*info-company*/
+
+.info-company, .footer {
+    display: flex;
+    flex-direction: column;     
+}
+
+.company-text{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.company-item {
+   flex: 1 1 50%;
+   flex-wrap: wrap;
+   padding: 0 2em 2em;
+}
+
+#first-company-item {
+    background-color: #2690D4;
+}
+
+/*footer*/
+
+.footer-text {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 2em;
+    background: #000;
+    color: #fff;  
+}
+
+.footer-item{
+    flex: 1 0 40%;
+    flex-wrap: wrap;
+    margin: 0 2em;
+}
+
+.footer-item a {
+    text-decoration: none;
+    color: #2690D4;
+}
+
+.footer-item span {
+    margin: 0 5px;
+}
