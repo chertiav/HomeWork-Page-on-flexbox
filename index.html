@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/styles/style.css">
+    <meta name="viewport" content="width=device-width">
     <title>CSS Grid Responsive Site</title>
 </head>
 
@@ -14,7 +14,7 @@
             <div id="header" class="container">
                 <div class="header-img"></div>
                 <div class="header-content">
-                    <h1>Welcome to Acme Web Solutions</h1>
+                    <h1 class="animation">Welcome to Acme Web Solutions</h1>
                     <div class="info-p">
                         <p>Lipsum, dolor sit amet consectetur adipisicing elit. Adipisci eum error earum soluta voluptatum nisi laboriosam eos saepe asperiores dolorum.</p> 
                     </div>
@@ -34,7 +34,10 @@
             <div id="id-card" class="container">
                 <div class="card-item">
                     <div class="card-upper">
-                        <img src="assets/imges/1.jpeg" alt="Web Development">
+                        <picture>
+                            <source srcset="assets/imges/1small.jpeg" media="(max-width: 380px)">
+                            <img src="assets/imges/1.jpeg" alt="Web Development">
+                        </picture>
                     </div>
                     <div class="card-lower">
                         <h3>
@@ -48,7 +51,10 @@
 
                 <div class="card-item">
                     <div class="card-upper">
-                        <img src="assets/imges/2.jpeg" alt="Mobile Applications">
+                        <picture>
+                            <source srcset="assets/imges/2small.jpeg" media="(max-width: 380px)">
+                            <img src="assets/imges/2.jpeg" alt="Mobile Applications">
+                        </picture>
                     </div>
                     <div class="card-lower">
                         <h3>
@@ -61,7 +67,10 @@
                 </div>
                 <div class="card-item">
                     <div class="card-upper">
-                        <img src="assets/imges/3.jpeg" alt="Tech Marketing">
+                        <picture>
+                            <source srcset="assets/imges/3small.jpeg" media="(max-width: 380px)">
+                            <img src="assets/imges/3.jpeg" alt="Tech Marketing">
+                        </picture>
                     </div>
                     <div class="card-lower">
                         <h3>
@@ -83,10 +92,9 @@
                 </div>
             </div>
             <div id="company-text" class="container">
-                <div id="first-company-item" class="company-item ">
-                    <h2>Contact Us</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, suscipit. Rerum ducimus a quod, ut et
-                        voluptas obcaecati unde fuga.</p>
+                <div id="first-company-item" class="company-item">
+                    <h2>Contact</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, suscipit. Rerum ducimus a quod, ut et voluptas obcaecati unde fuga.</p>
                     <p>contact@acmewebsolutions.test</p>
                 </div>
                 <div class="company-item">

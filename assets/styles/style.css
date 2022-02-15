@@ -31,19 +31,11 @@ p {
 .wrapper{
     display: flex;
     flex-direction: column;
-    /* border: 1px solid red; */
 }
 
 .container{
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    /* border: 1px solid yellow; */
-}
-
-.info{
-    display: column;
-    flex-direction:nowrap;
     justify-content: center;
 }
 
@@ -55,7 +47,7 @@ p {
     padding: 1em 2em;
     border: 1px solid #666;
     margin: 0.5em 0;
-  }
+}
 
 .btn:hover {
     background: #eaeaea;
@@ -76,7 +68,7 @@ p {
     background-image: url(../imges/fon.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
     width: 100%;
     height: 450px;
     z-index: -1;
@@ -91,13 +83,30 @@ p {
 
 .header-content{
     padding: 0 1.5em;
+    position: relative;
 }
 
 .header-content>h1{
-    padding-top:100px;
+    padding-top:3em;
     padding-bottom: 0;
 }
 
+.animation{
+    animation-name: left-right;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes left-right{
+    from{
+        width: 100%; 
+        margin-left:100%;
+    }
+    to{
+        width: 100%;
+        margin-left:-100%;
+    }
+}
 
 
 
@@ -119,8 +128,6 @@ p {
     column-fill: balance;
     padding-bottom: 2em;
     text-align: center;
-
-    /* border: 1px solid red; */
 }
 
 .info-upper>p{
@@ -170,7 +177,7 @@ p {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-content: space-around;
+    align-content: space-between;
     padding: 0;
 }
 
@@ -189,7 +196,6 @@ p {
 
 #footer{
     display: flex;
-    /* flex-direction: row; */
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
@@ -220,7 +226,27 @@ p {
     .info-upper>p{
         padding-top: 0.9em;
     }
-    .footer-item{
+    .footer-item, .company-item{
         flex-basis:100%;
     }
 }
+
+@media screen and (max-width: 380px) {
+  
+   .header-img{
+        background-image: url(../imges/fon-small.png);
+}
+
+}
+
+@media screen and (max-width: 350px) {
+
+    body {
+        font-size: 1rem;
+    }
+    .header-content>h1{
+        padding-top:1.5em;
+        padding-bottom: 0;
+    }
+}
+
